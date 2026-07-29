@@ -1,0 +1,10 @@
+<h1><%= @team.name %></h1>
+
+<h2>Matches</h2>
+<ul>
+  <% @matches.each do |match| %>
+    <li>
+      <%= match.home_team.short_name %> <%= match.home_score %> - <%= match.away_score %> <%= match.away_team.short_name %>
+    </li>
+    <% end %>
+</ul>
